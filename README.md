@@ -1,3 +1,45 @@
+## Brocoli & Co.
+
+## Tech stack
+
+- `React` framework: `NextJS`
+  - Easy to do SEO.
+  - Enhance performance compare to regular `react` with SSR & SSG, image optimization, ...
+  - Developer experience
+    - Easy routing.
+    - Has API route.
+    - Big community for easy to learn and support.
+- Styling: `Tailwind`
+  - Allow to add style very quickly using utility classes.
+  - Easier to do mobile and web design with a lot of builtin break points and can be customize.
+  - Community for learning, support when you get stuck, good design to take inspiration from when go online.
+  - Extract and serve `css` in 1 file to load separately from `html` file.
+- Testing library: `Jest`
+  - Allow developer to test logic for functions and also for interaction.
+  - Test snapshot to ensure the page structure not changing and if there is update then it's intentional.
+- UI library: `shadcn-ui`
+  - Built on top of `radix-ui` using `tailwind` with the approach to allow you to copy the component to your project and let you maintain and customize it.
+  - Has uniform style with other components.
+  - You can customize the component you install easily by just modify the source code.
+  - Only install what you need
+  - Within a company can just take the core library to create a wrapper to express the design system company has and let everyone to install it
+- Form: `react-hook-form`
+  - Allow develop very performance form by only trigger things you need when editing in the form.
+  - Has good support for resolver library like [zod](https://www.npmjs.com/package/@hookform/resolvers#zod), [yup](https://www.npmjs.com/package/@hookform/resolvers#yup), [joi](https://www.npmjs.com/package/@hookform/resolvers#joi), ...
+- Resolver for form: `zod`
+  - Popular library to develop form and validate form.
+  - Has a lot of builtin validation so you can make the schema and has validation done quickly.
+- Fetching data: `swr`
+  - Quickly has hook for fetching and updating data
+  - Cache
+  - Performance
+    - Deduplication
+    - Deep Comparison
+    - Dependency Collection
+    - Tree Shaking
+
+All the libraries chosen are popular to allow new comer to familiarize and learn quickly, allow HR to find a lot of candidate with relevant experiences already.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -5,13 +47,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

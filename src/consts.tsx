@@ -1,0 +1,4 @@
+export const REQUEST_INVITE_API_URL =
+  process.env.NEXT_PUBLIC_REQUEST_INVITE_API_URL;
+
+export const INPUT_MAX_LENGTH = 200;
