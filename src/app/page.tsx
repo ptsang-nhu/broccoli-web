@@ -5,8 +5,8 @@ import { FooterText, H1, Text } from "@/components/common/Typography";
 
 export default function Home() {
   return (
-    <>
-      <header className="sticky top-0">
+    <main className="flex h-dvh flex-col">
+      <header className="bg-background sticky top-0">
         <nav className="mx-auto w-full border-b-2 border-b-violet-400 px-2 py-4 md:px-4 md:py-6 dark:border-b-blue-400">
           <div className="mx-auto max-w-5xl">
             <Link
@@ -19,19 +19,21 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="mt-[20vh] text-center">
-        <H1>
-          A better way
-          <br /> to enjoy everyday.
-        </H1>
-        <Text className="my-10">Be first to know when we launch.</Text>
-        <RequestInviteButton />
+      <section className="flex flex-1 flex-col justify-center">
+        <div className="p-2 text-center md:p-4">
+          <H1>
+            A better way
+            <br /> to enjoy everyday.
+          </H1>
+          <Text className="my-10">Be first to know when we launch.</Text>
+          <RequestInviteButton />
+        </div>
       </section>
 
-      <footer className="md:px4 fixed bottom-0 w-full border-t-2 border-t-violet-400 px-2 py-4 text-center text-sm md:text-base dark:border-b-blue-400">
+      <footer className="md:px4 bg-background sticky bottom-0 w-full border-t-2 border-t-violet-400 px-2 py-4 text-center text-sm md:text-base dark:border-b-blue-400">
         <FooterText>Made with ❤️ in Melbourne</FooterText>
         <FooterText>® 2016 Brocoli & Co. All rights reserved.</FooterText>
       </footer>
-    </>
+    </main>
   );
 }

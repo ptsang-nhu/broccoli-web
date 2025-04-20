@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@utility h-dvh {
+  @supports (height: 100dvh) {
+    height: 100dvh;
+  }
+  @supports not (height: 100dvh) {
+    height: 100vh;
+  }
+}
