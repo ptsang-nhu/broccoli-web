@@ -63,7 +63,7 @@ async function sendRequestInvite(
 
     if (!res.ok) {
       const body = await res.json();
-      throw new Error(body.errorMessage || "Unknown error from server");
+      throw new Error(body?.errorMessage || "Unknown error from server");
     }
   } catch (err) {
     throw err;
