@@ -1,4 +1,4 @@
-## Brocoli & Co.
+## Broccoli & Co.
 
 ## Tech stack
 

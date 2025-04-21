@@ -11,7 +11,7 @@ function Navbar() {
             href="/"
             className="mt-2 cursor-pointer rounded-2xl p-1 font-mono text-xl font-semibold text-gray-950 outline-blue-400 focus-visible:outline-2 md:text-3xl dark:text-white dark:outline-blue-300"
           >
-            BROCOLI & CO.
+            BROCCOLI & CO.
           </Link>
         </div>
       </nav>

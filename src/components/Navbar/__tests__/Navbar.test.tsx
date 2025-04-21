@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 
 test("Navbar should be rendered", () => {
   render(<Navbar />);
-  const logoText = screen.getByText("BROCOLI & CO.");
+  const logoText = screen.getByText("BROCCOLI & CO.");
 
   expect(logoText).toBeInTheDocument();
 });

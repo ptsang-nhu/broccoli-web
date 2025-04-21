@@ -240,7 +240,7 @@ function RequestInviteButton({
         {isSuccess ? (
           <>
             <DialogDescription className="my-6 text-center text-balance">
-              You will be one of the first to experience Brocoli & Co. when we
+              You will be one of the first to experience Broccoli & Co. when we
               launch.
             </DialogDescription>
             <DialogFooter>
