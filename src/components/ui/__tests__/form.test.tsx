@@ -37,7 +37,7 @@ function FormTest() {
   );
 }
 
-test("should be rendered", () => {
+test("Form should be rendered", () => {
   render(<FormTest />);
   const label = screen.getByText("Username");
   expect(label).toBeInTheDocument();

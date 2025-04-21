@@ -3,14 +3,14 @@ import { render, screen, fireEvent } from "@testing-library/react";
 
 import { Button } from "../button";
 
-test("should be rendered", () => {
+test("Button should be rendered", () => {
   render(<Button>Button</Button>);
   const button = screen.getByText("Button");
 
   expect(button).toBeInTheDocument();
 });
 
-test("should be rendered with asChild", () => {
+test("Button should be rendered with asChild", () => {
   render(
     <Button asChild>
       <a>Button</a>
@@ -21,7 +21,7 @@ test("should be rendered with asChild", () => {
   expect(button).toBeInTheDocument();
 });
 
-test("should call the onClick function when click", () => {
+test("Button should call the onClick function when click", () => {
   const onButtonClickMock = jest.fn();
 
   const { getByText } = render(
